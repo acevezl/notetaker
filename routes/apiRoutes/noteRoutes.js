@@ -13,4 +13,14 @@ router.get('/notes', (req, res) => {
     res.json(results);
 });
 
+// Get note by ID
+router.get('/notes/:id', (req, res) => {
+    let results = findByID(req.params.id, notes);
+    if (result) {
+        res.json(result);
+    } else {
+        res.sendStatus(404);
+    }
+})
+
 module.exports = router;
