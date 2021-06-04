@@ -1,7 +1,24 @@
 {
-    "notes": [
-        {"id":"01","title":"Test Title","text":"Test text"},
-        {"id":"02","title":"This is a Title","text":"This is a note"},
-        {"id":"03","title":"This is another Title","text":"This is anoter note"}
-    ]
+  "notes": [
+    {
+      "id": "01",
+      "title": "Test Title",
+      "text": "Test text"
+    },
+    {
+      "id": "02",
+      "title": "This is a Title",
+      "text": "This is a note"
+    },
+    {
+      "id": "03",
+      "title": "This is another Title",
+      "text": "This is anoter note"
+    },
+    {
+      "title": "Don't forget ",
+      "text": "Don't forget to commit often, muddafukka!",
+      "id": "3"
+    }
+  ]
 }
