@@ -21,8 +21,8 @@ app.use(express.static('public'));
 const apiRoutes = require('./routes/apiRoutes');
 app.use('/api', apiRoutes);
 
-// const htmlRoutes = require('./routes/htmlRoutes');
-// app.use('/', htmlRoutes);
+const htmlRoutes = require('./routes/htmlRoutes');
+app.use('/', htmlRoutes);
 
 // And now we run the server (note I'm using port 80 b/c it's a web app)
 app.listen(PORT, ()=> {
