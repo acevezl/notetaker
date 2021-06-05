@@ -1,5 +1,5 @@
-const { filterByQuery, validateNote, createNewNote } = require('../../lib/notes');
-const { notes } = require('../../db/db.json');
+const { filterByQuery, validateNote, createNewNote, deleteNote } = require('../../lib/notes');
+let { notes } = require('../../db/db.json');
 
 const router = require('express').Router();
 
@@ -15,7 +15,6 @@ router.get('/notes', (req, res) => {
 // Saves note
 router.post('/notes', (req, res) => {
     req.body.id = notes.length.toString();
-    console.log(req.body);
     if (!validateNote(req.body)) {
         res.status(400).send('The note is missing a title');
     } else {
@@ -24,14 +23,21 @@ router.post('/notes', (req, res) => {
     }
 });
 
-// Get note by ID
-router.get('/notes/:id', (req, res) => {
-    let results = findByID(req.params.id, notes);
-    if (result) {
-        res.json(result);
-    } else {
-        res.sendStatus(404);
-    }
-})
+// Deletes note
+router.delete('/notes/:id', (req, res) => {
+    console.log(req.params.id);
+    notes = deleteNote(req.params.id, notes);
+    res.json(notes);
+});
+
+// // Get note by ID
+// router.get('/notes/:id', (req, res) => {
+//     let results = findByID(req.params.id, notes);
+//     if (result) {
+//         res.json(result);
+//     } else {
+//         res.sendStatus(404);
+//     }
+// })
 
 module.exports = router;
