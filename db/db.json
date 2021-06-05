@@ -29,6 +29,11 @@
       "title": "Save this note",
       "text": "Save save save the note!",
       "id": "5"
+    },
+    {
+      "title": "I'm adding a new note",
+      "text": "This ia note that will be added, and then saved. The save button will hide, and the only visible button will be the add button.",
+      "id": "6"
     }
   ]
 }
