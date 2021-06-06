@@ -14,7 +14,17 @@ router.get('/notes', (req, res) => {
 
 // Saves note
 router.post('/notes', (req, res) => {
-    req.body.id = notes.length.toString();
+    // req.body.id = notes.length.toString(); This creates a bug when you delete a note, and add a new one, the note id will be repeated, and two note will have the same id
+    if (notes.length) {
+        req.body.id = Math.max.apply(Math, notes.map( function(noteObject) {
+            return noteObject.id + 1;
+        }));
+    } else {
+        req.body.id = 1;
+    }
+
+
+    console.log(req.body);
     if (!validateNote(req.body)) {
         res.status(400).send('The note is missing a title');
     } else {
