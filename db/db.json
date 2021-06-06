@@ -1,14 +1,3 @@
 {
-  "notes": [
-    {
-      "id": 1,
-      "title": "Lorem Ipsum Updated!",
-      "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis consectetur varius pretium. Vivamus scelerisque arcu ut scelerisque ultrices. Fusce id nisi eu augue iaculis feugiat. Duis quis pulvinar risus. Mauris nec laoreet lorem, eget fringilla augue. Duis quis semper nulla. Ut diam eros, vehicula quis tincidunt eu, volutpat et massa. Etiam dapibus ultrices libero, ut egestas dolor cursus nec. Etiam id mauris id elit dignissim viverra. Praesent nec orci neque. Duis malesuada sollicitudin magna, ut tincidunt est viverra sit amet.\n\nPraesent euismod volutpat sollicitudin. Interdum et malesuada fames ac ante ipsum primis in faucibus. Cras erat felis, consectetur ac molestie sed, interdum nec sapien. Pellentesque feugiat augue sem, sed hendrerit neque consectetur eget. Nulla sit amet tellus suscipit, lobortis dolor porta, pretium metus. Morbi sit amet massa ac nunc pretium pulvinar nec ac orci. Proin nisl urna, sagittis eu nibh vitae, facilisis tempus lorem. Nam egestas sem sit amet felis malesuada pharetra sit amet eget augue. Duis nec eros tincidunt, laoreet sem ac, iaculis sapien. Aenean sit amet quam porttitor, tincidunt lacus sed, interdum ex. Integer dui sem, bibendum ut odio id, porttitor eleifend nunc."
-    },
-    {
-      "id": 2,
-      "title": "Bacon Ipsum Updated",
-      "text": "Bacon ipsum dolor amet pork belly shoulder beef drumstick biltong kevin chicken jowl flank porchetta picanha filet mignon t-bone. Meatball brisket chicken t-bone bresaola. Shoulder tongue sausage pork belly meatball, beef bacon turducken. Biltong cow short loin, boudin tenderloin ground round tongue pork pastrami ham hock corned beef andouille shoulder tail. Bresaola burgdoggen andouille brisket pastrami short loin chislic chicken, prosciutto tri-tip. Jerky kevin chicken, shankle fatback frankfurter flank chuck filet mignon shoulder hamburger.\n\nUpdated with moar text."
-    }
-  ]
+  "notes": []
 }

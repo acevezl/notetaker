@@ -66,5 +66,8 @@ html, body {
   border-left: none;
   border-right: none;
   padding: 20px;
+}
+
+.list-container .list-group-item span {
   cursor: pointer;
 }
